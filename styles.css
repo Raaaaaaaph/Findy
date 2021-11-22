@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'Bariol';
+    src: url('fonts/bariolbold.ttf');
+}
+
+@font-face {
+    font-family: 'Bariolthin';
+    src: url('fonts/bariolthin1.ttf');
+}
+
+@font-face {
+    font-family: 'Cooper';
+    src: url('fonts/cooperm.ttf');
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: linear-gradient(#ffffff, #b34ef6);
+    min-height: 100vh;
+}
+
+/* HEADER */
+
+h1 {
+    float: left;
+    margin-left: 10px;
+    font-family: Bariol;
+    clear: both;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+h1 a:visited {
+    color: black;
+}
+
+h1 a:hover {
+    color: plum;
+}
+
+nav {
+    float: right;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    font-family: Bariolthin;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:visited {
+    color: black;
+}
+
+nav ul li a:hover {
+    color: plum;
+}
+
+/* MAIN */
+
+main {
+    clear: both;
+    margin-left: 10px;
+}
+
+h3 {
+    padding-top: 90px;
+    font-size: 60px;
+    font-family: Cooper;
+}
+
+/* SVG */
+
+.svg-skate svg {
+    width: 80%;
+    height: 80%;
+}
+
+.svg-skate {
+    margin-left: 500px;
+    margin-top: -150px;
+}
+
+#skate {
+    animation-name: skate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes skate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(25deg);
+    }
+}
+
+.svg-bbq svg {
+    width: 25%;
+    height: 25%;
+}
+
+.svg-bbq {
+    margin-left: 100px;
+}
+
+#barbec {
+    animation-name: barbec;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes barbec {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.svg-wedd svg {
+    width: 50%;
+    height: 50%;
+}
+
+.svg-wedd {
+    margin-left: 40px;
+}
+
+#coeur {
+    animation-name: coeur;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes coeur {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#firework {
+    animation-name: firework;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes firework {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.svg-paris svg {
+    width: 50%;
+    height: 50%;
+}
+
+.svg-paris {
+    margin-left: 40px;
+}
+
+/* APPLY */
+
+.apply {
+    clear: both;
+    text-align: center;
+    font-family: Cooper;
+    padding: 50px 20px 0px 20px;
+}
+
+/* ABOUT */
+
+.about {
+    clear: both;
+    text-align: center;
+    font-family: Cooper;
+    padding: 100px 20px 0px 20px;
+}
+
+/* PLACES */
+
+.places {
+    clear: both;
+    margin-left: 400px;
+    text-align: center;
+    font-family: Cooper;
+}
